@@ -115,7 +115,7 @@ function Book(title, author, pages, status) {
     this.status = status;
 
     this.info = function () {
-        return `The ${this.title} by ${this.author},${this.pages} pages,${this.status}.`
+        return `${this.title} by ${this.author}, has ${this.pages} pages. It is ${this.status}.`
     }
 }
 
@@ -181,5 +181,7 @@ function addToLibrary(title, author, pages, status) {
 
 }
 
-addToLibrary("the booooo", "Mia", 2, "read");
+addToLibrary("The Holy Bible", "Various Authors", 1200, "read");
+addToLibrary("Things Fall Apart", "Chinua Achebe", 2, "read");
+addToLibrary("War and Peace", "Leo Tolstoy", 1287, "read");
 displayBook();

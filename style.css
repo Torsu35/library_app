@@ -250,8 +250,9 @@ select {
 }
 
 .info-container{
-    font-size: 2em;
-    width: 35ch;
+    color: #6a6969;
+    font: inherit;
+    width: 45ch;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -260,6 +261,10 @@ select {
     border-radius: 1em;
     background-color: #fff;
 
+}
+
+.info{
+    font-size:x-large ;
 }
 
 .info-container .buttons{
