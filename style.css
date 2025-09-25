@@ -138,10 +138,6 @@
     transform: translateX(17.5px);
 }
 
-/* .toggle::after {
-    content: "Read";
-} */
-
 input[type='checkbox'] {
     display: none;
 }
@@ -199,18 +195,26 @@ dialog {
     color: rgba(0, 0, 0, 0.616);
 }
 
-/* .status {
-    width: 13em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 40px;
-} */
+.form-control>input:focus,
+select:focus{
+    outline: none;
+    border: 1px solid rgb(38, 38, 246);
+}
+
+.form-control>input:user-invalid,
+select:user-invalid{
+    border-color: rgb(246, 38, 38);
+}
+
+button:hover{
+    opacity: 0.8;
+}
 
 select {
     width: 13em;
     font-size: 1em;
     padding: 3px;
+    border: none;
     border-radius: 6px;
     background-color: rgba(0, 255, 255, 0.185);
     color: rgba(0, 0, 0, 0.616);
@@ -230,7 +234,9 @@ select {
     margin: 20px;
 }
 
-#cancel {
+#cancel-add,
+#cancel-remove,
+#ok {
     background-color: rgb(84, 85, 84);
 }
 
@@ -245,4 +251,22 @@ select {
     width: 450px;
     border-radius: 40px;
     padding: 20px;
+}
+
+.info-container{
+    font-size: 2em;
+    width: 35ch;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid rgba(0, 255, 255, 0.774);
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #fff;
+
+}
+
+.info-container .buttons{
+    align-self: flex-end;
+
 }

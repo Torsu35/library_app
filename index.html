@@ -20,7 +20,7 @@
                 <p class="title">The Book</p>
                 <div class="details">Detail...</div>
                 <div class="card-control">
-                    <img src="image/trash-can-outline.svg" class="remove" alt="#" >
+                    <img src="image/trash-can-outline.svg" class="remove" alt="#">
                     <div>
                         Read
                         <label class="toggle">
@@ -39,7 +39,7 @@
 
     </div>
 
-    <dialog id="modal" closedby="closerequest" >
+    <dialog id="modal" >
 
         <form action="#" method="dialog">
             <div class="new-book">Add A New Book</div>
@@ -51,7 +51,7 @@
 
             <div class="form-control">
                 <label for="author">Name of Author</label>
-                <input type="text" id="author" minlength="2" maxlength="80" required> 
+                <input type="text" id="author" minlength="2" maxlength="80" required>
             </div>
 
             <div class="form-control">
@@ -69,22 +69,35 @@
             </div>
 
             <div class="buttons">
-                <button id="cancel">CANCEL</button>
+                <button id="cancel-add">CANCEL</button>
                 <button id="add-book">ADD</button>
             </div>
         </form>
     </dialog>
 
-    <dialog closedby="any" id="remove-modal" >
+    <dialog id="remove-modal">
         <form action="" method="dialog" class="remove-modal">
             Are you sure, you want delete this book?
 
             <div class="buttons">
-                <button id="cancel">CANCEL</button>
+                <button id="cancel-remove">CANCEL</button>
                 <button id="remove" value="confirm">REMOVE</button>
             </div>
         </form>
 
+    </dialog>
+
+    <dialog id="showInfo" >
+        
+        <div class="info-container">
+
+            <p class="info"></p>
+            <div class="buttons">
+                <button id="ok">OK</button>
+            </div>
+            
+        </div>
+    
     </dialog>
 
 
